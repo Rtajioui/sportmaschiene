@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maschiene</title>
+  <link rel="stylesheet" href="main css.css">
+
+  <script>
+    function check() {
+      var passcodeInput = document.getElementById("passcode").value;
+      var correctPasscode = ""; 
+
+      if (passcodeInput === correctPasscode) {
+        document.querySelector(".login-container").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+      } else {
+        alert("Falsches Passwort");
+      }
+    }
+  </script>
+</head>
+<body>
+
+    
+  <header>
+    <div class="titel">MUSCULUS DELTOIDEUS</div>
+    <div class="untertitel">Maschienen Uebungen</div>
+  </header>
+
+  <div class="login-container">
+    <h2>Trage das Passwort ein</h2>
+    <input type="password" id="passcode" placeholder="Passwort" />
+    <button onclick="check()">Enter</button>
+  </div>
+
+
+  <div class="content">
+    <h2>Waehle aus was du schauen willst</h2>
+
+
+    <div class="video-grid">
+      <div class="video-teil">
+        <p>Standard</p>
+        <video controls>
+          <source src="Top 5 Dogs (Part 2).mp4" type="video/mp4" />
+        </video>
+      </div>
+    
+      <div class="video-teil">
+        <p>Progression</p>
+        <video controls>
+          <source src="Top 5 Dogs (Part 2).mp4" type="video/mp4" />
+        </video>
+      </div>
+    
+      <div class="video-teil">
+        <p>Regression</p>
+        <video controls>
+          <source src="Top 5 Dogs (Part 2).mp4" type="video/mp4" />
+        </video>
+      </div>
+    
+      
+      <div class="video-teil">
+        <p>Fehler standard</p>
+        <video controls>
+          <source src="Top 5 Dogs (Part 2).mp4" type="video/mp4" />
+        </video>
+      </div>
+    
+      <div class="video-teil">
+        <p>Fehler progression</p>
+        <video controls>
+          <source src="Top 5 Dogs (Part 2).mp4" type="video/mp4" />
+        </video>
+      </div>
+    
+      <div class="video-teil">
+        <p>Fehler Regression</p>
+        <video controls>
+          <source src="Top 5 Dogs (Part 2).mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    
+    </div>
+    
+</body>
+</html>
