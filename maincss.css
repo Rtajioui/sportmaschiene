@@ -62,7 +62,7 @@ header {
 
 .content {
   display: none;
-  border: 2px solid red;
+  border: 2px solid white;
   padding: 30px; 
 width: 3000px; 
 max-width: 1600px; 
